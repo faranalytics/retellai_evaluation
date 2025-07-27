@@ -1,0 +1,41 @@
+{
+  "name": "@farar/retellai_evaluation",
+  "version": "0.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com_adamjpatterson:faranalytics/retellai_evaluation.git"
+  },
+  "license": "MIT",
+  "author": "",
+  "type": "module",
+  "main": "./dist/main.js",
+  "scripts": {
+    "clean": "rm -rf ./dist/*",
+    "build": "tsc --build .",
+    "clean:build": "npm run clean && npm run build",
+    "monitor": "nodemon ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.23.0",
+    "@stylistic/eslint-plugin-ts": "^4.2.0",
+    "@types/express": "^5.0.3",
+    "@types/express-ws": "^3.0.5",
+    "@types/node": "^22.13.14",
+    "@types/ws": "^8.18.0",
+    "eslint": "^9.23.0",
+    "nodemon": "^3.1.10",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.28.0"
+  },
+  "engines": {
+    "npm": ">=10.1.0",
+    "node": ">=20.9.0"
+  },
+  "dependencies": {
+    "@farar/prompts": "file:prompts",
+    "express": "^5.1.0",
+    "express-ws": "^5.0.2",
+    "openai": "^5.10.2"
+  }
+}
